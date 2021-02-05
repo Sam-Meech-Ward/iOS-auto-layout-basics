@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Layout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaking Moistly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPe-f0-ljd">
+                                <rect key="frame" x="142" y="443" width="130.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqa-Pw-L9M">
+                                <rect key="frame" x="109" y="473.5" width="196" height="10"/>
+                                <color key="backgroundColor" red="1" green="0.67778228226634307" blue="0.97506087699468003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="yeq-Yu-Hcg"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-JN-1Vy">
+                                <rect key="frame" x="20" y="44" width="373" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ist-d6-VUQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="200"/>
+                                        <state key="normal" image="gear" catalog="system"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c6k-DU-rL9">
+                                        <rect key="frame" x="62" y="0.0" width="62.5" height="200"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-cQ-T3g">
+                                        <rect key="frame" x="124.5" y="0.0" width="62" height="200"/>
+                                        <state key="normal" image="gear" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jJ-qZ-fUk">
+                                        <rect key="frame" x="186.5" y="0.0" width="62" height="200"/>
+                                        <state key="normal" image="gear" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2y-Ql-tl5">
+                                        <rect key="frame" x="248.5" y="0.0" width="62.5" height="200"/>
+                                        <state key="normal" image="gear" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnI-Eb-NNq">
+                                        <rect key="frame" x="311" y="0.0" width="62" height="200"/>
+                                        <state key="normal" image="gear" catalog="system"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XPe-f0-ljd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FW5-Aw-GJz"/>
+                            <constraint firstItem="XPe-f0-ljd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GU6-EW-7HD"/>
+                            <constraint firstItem="UFu-JN-1Vy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hmw-6V-fdh"/>
+                            <constraint firstItem="Hqa-Pw-L9M" firstAttribute="top" secondItem="XPe-f0-ljd" secondAttribute="bottom" constant="10" id="Qod-34-hXx"/>
+                            <constraint firstItem="Hqa-Pw-L9M" firstAttribute="width" secondItem="XPe-f0-ljd" secondAttribute="width" multiplier="1.5" id="UYb-Kc-4ZX"/>
+                            <constraint firstItem="Hqa-Pw-L9M" firstAttribute="centerX" secondItem="XPe-f0-ljd" secondAttribute="centerX" id="XPu-OW-yCD"/>
+                            <constraint firstItem="XPe-f0-ljd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZNF-Yu-b8l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UFu-JN-1Vy" secondAttribute="trailing" constant="21" id="ihE-69-ac1"/>
+                            <constraint firstItem="UFu-JN-1Vy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nkF-9X-nD1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GU6-EW-7HD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelCenterConstraint" destination="FW5-Aw-GJz" id="2UU-CT-RPe"/>
+                        <outlet property="labelTopConstraint" destination="GU6-EW-7HD" id="QET-hr-UnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+    </resources>
+</document>
